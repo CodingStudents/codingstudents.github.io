@@ -29,7 +29,6 @@
 }
 body {
   width: 100vw;
-  overflow-x: hidden;
 }
 
 header {
@@ -312,6 +311,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   nav ul {
     display: flex;
