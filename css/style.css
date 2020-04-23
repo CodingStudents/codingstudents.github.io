@@ -292,7 +292,7 @@ main .facts div.description {
 
 main .facts div.description p {
   width: calc(49% - 4rem);
-  min-width: 400px;
+  min-width: 320px;
   margin-bottom: 1.5rem;
   max-width: 700px;
   padding-right: 4rem;
