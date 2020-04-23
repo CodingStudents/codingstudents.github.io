@@ -29,6 +29,7 @@
 }
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 header {
@@ -133,7 +134,7 @@ header {
       background: #404040;
       color: rgba(255, 255, 255, 0.384);
       text-decoration: none;
-      padding: 15px 20px 15px 20px;
+      padding: 0.5rem 20px 0.5rem 20px;
       margin-left: 2em;
       font-size: 0.3em;
       font-family: PxGrotesk;
