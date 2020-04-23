@@ -1,1 +1,132 @@
-🚧
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Students</title>
+    <meta name="description" content="Der Countdown läuft: am 07 Mai ist unser nächstes Coding Students Meetup">
+    <meta name="keywords" content="meetup Düsseldorf sipgate remote ">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script async src="scripts/index.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NDK8FTZ');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+    <header>
+
+        <div class="countdown">
+            <div><span id="days">--</span>D</div>
+            <div><span id="hours">--</span>H</div>
+            <div><span id="minutes">--</span>M</div>
+            <div><span id="seconds">--</span>S</div>
+
+            <div class="spinner">
+                <svg viewBox="0 0 124 124">
+                    <path id="curve" d="M 12, 62
+                a 50,50 0 1,1 100,0
+                a 50,50 0 1,1 -100,0"></path>
+                    <text>
+                        <textPath xlink:href="#curve" textLength="305" lengthAdjust="spacing">
+                            never skip hack day - never skip hack day -
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="title">
+            Coding Students Meetup <button disabled>Stream starten</button>
+
+        </div>
+
+
+        <object data="img/07_gradient.svg" type="image/svg+xml" class="editionCount"></object>
+
+    </header>
+
+    <main>
+
+        <section class="facts">
+
+            <div class="meetup-info">
+                <div class="next-meetup">Our next Meetup</div>
+                <div class="edition-name">Localhost <br>Edition</div>
+                <!--
+                <div class="your-email">
+                    <input type="email" placeholder="Deine E-Mail" />
+                    <button>Remind me</button>
+                </div>
+-->
+
+            </div>
+            <div class="description">
+                <p>Auch wenn wir gerade alle zu Hause arbeiten, haben wir Lust auf ein gemeinsames Meetup! Deshalb haben
+                    wir beschlossen, einfach mal etwas Neues zu probieren: diesmal gibt es das Coding Students Meetup in
+                    der Localhost Edition. <br><br>Statt auf unserem schönen Campus im Düsseldorfer Medienhafen,
+                    veranstalten
+                    wir das Event einfach online. Wie gewohnt wird es zwei interessante Talks geben und anschließend eine
+                    gesellige Runde um den Abend ausklingen zu lassen – diesmal ganz virtuell. <br><br>Als Thema für den
+                    Abend haben wir uns ein kleines Hangman-Spiel im Browser überlegt, mit dem man sich hervorragend
+                    zusammen
+                    die Langeweile vertreiben kann.
+                </p>
+                <p>Im ersten Talk des Abends erstellen wir das Frontend für unser Spiel. Hier bauen wir mit React eine
+                    einfache Anwendung, die wir mit Websockets an unser Backend anschließen werden. <br><br>Das Backend
+                    dazu
+                    entwickeln wir im zweiten Talk. Dafür setzen wir einen Server mit Node.js auf, mit dem sich unser
+                    Spiel verbindet und der das zu ratende Wort aussucht.
+                </p>
+
+        </section>
+
+        <section class="gallery">
+            <div>
+                <img src="img/gallery/Talk.jpg" height="340px" class="item">
+                <img src="img/gallery/wraps.jpg" height="320px" class="item">
+            </div>
+            <div>
+                <img src="img/gallery/Drei_Personen.jpg" height="330px" class="item">
+                <img src="img/gallery/Laptop.jpg" height="260px" class="item">
+            </div>
+            <div>
+                <img src="img/gallery/Meetup_Workshop.jpg" height="300px" class="item">
+                <img src="img/gallery/Orginal_Schluessel.jpg" height="380px" class="item">
+            </div>
+            <div>
+                <img src="img/gallery/Sven_Talk.jpg" height="340px" class="item">
+                <img src="img/gallery/Meetup_Bild.jpg" height="240px" class="item">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://www.sipgate.de/datenschutz">Datenschutz</a></li>
+                <li><a href="https://www.sipgate.de/impressum">Impressum</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="https://twitter.com/sipgatede?lang=de" class="twitter"><img src="img/Twitter_Logo_Blue.svg" alt=""></a>
+            <a href="https://www.instagram.com/sipgate/" class="instagram"><img src="img/glyph-logo_May2016@2x.png" alt=""></a>
+            <a href="https://www.sipgate.de/" class="sipgate"><img src="img/presented_by_sipgate_black.png" alt=""></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

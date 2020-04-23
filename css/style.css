@@ -1,0 +1,397 @@
+@font-face {
+  font-family: MonumentExtended;
+  src: url(../fonts/MonumentExtended-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: DINNextLTPro;
+  src: url(../fonts/DINNextLTPro-Light.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SpaceText;
+  src: url(../fonts/SpaceText-Medium.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: PxGrotesk;
+  src: url(../fonts/PxGrotesk-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: PxGrotesk;
+  src: url(../fonts/PxGrotesk-Bold.otf);
+  font-weight: bold;
+}
+
+body {
+  width: 100vw;
+}
+
+header {
+  position: relative;
+  background: #000000;
+  color: white;
+  height: 100vmin;
+  padding-left: 10vw;
+}
+
+header .countdown {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 15vw;
+  position: relative;
+}
+
+header .countdown div:not(:last-child) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-family: MonumentExtended;
+  font-size: calc(2.5vw + 5px);
+  line-height: 140%;
+  z-index: 1;
+  letter-spacing: 0.3vw;
+  margin-right: calc(1.2vw + 5px);
+  width: calc(9.5vw + 20px);
+}
+
+header .countdown div:not(:last-child) span {
+  font-family: SpaceText;
+  font-size: 2em;
+}
+
+header .countdown div:first-child span {
+  margin-left: 0;
+}
+
+header .countdown .spinner {
+  position: absolute;
+  top: -6vw;
+  right: -4vw;
+  width: calc(10vw + 20px);
+  height: calc(10vw + 20px);
+}
+
+header .countdown .spinner svg {
+  -webkit-animation: spin 15s linear infinite;
+          animation: spin 15s linear infinite;
+}
+
+header .countdown .spinner svg path {
+  display: none;
+}
+
+header .countdown .spinner svg text {
+  fill: white;
+  font-family: SpaceText;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-animation: spin 3s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+          animation: spin 3s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  will-change: transform;
+}
+
+header .countdown .spinner::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, black 36%, rgba(0, 0, 0, 0) 60%);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+header .title {
+  position: relative;
+  z-index: 1;
+  font-family: DINNextLTPro;
+  font-size: calc(3vw + 10px);
+  padding-top: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .title button {
+  background: #404040;
+  color: rgba(255, 255, 255, 0.384);
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  margin-left: 2em;
+  font-size: 0.3em;
+  font-family: PxGrotesk;
+  font-weight: Regular;
+  border: none;
+  border-radius: 0px;
+}
+
+header .editionCount {
+  width: 80%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -5.5%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 7rem;
+  width: 100vw;
+  margin: 0;
+}
+
+main .facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 95%;
+}
+
+main .facts div.meetup-info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 4rem;
+}
+
+main .facts div.meetup-info .next-meetup {
+  font-family: SpaceText;
+  font-size: calc(1vw + 30px);
+  line-height: 51px;
+}
+
+main .facts div.meetup-info .edition-name {
+  margin-top: 0.3em;
+  font-family: MonumentExtended;
+  font-size: calc(2vw + 40px);
+  line-height: 110%;
+}
+
+main .facts div.meetup-info .your-email {
+  font-family: PxGrotesk;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 3vw;
+  padding-bottom: 4vw;
+}
+
+main .facts div.meetup-info .your-email input {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: PxGrotesk;
+  height: 47px;
+  padding: 15px 22px 14px 22px;
+  width: 100%;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  background: #fff;
+  border: 1px solid #E6E5E5;
+  border-radius: 0px;
+  outline: none;
+}
+
+main .facts div.meetup-info .your-email button {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 47px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 22px;
+  padding-right: 22px;
+  background: #000;
+  border: 1px solid transparent;
+  color: #fff;
+  font-family: PxGrotesk;
+  font-weight: regular;
+}
+
+main .facts div.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  font-family: PxGrotesk;
+  font-size: 22px;
+  line-height: 31px;
+  padding-bottom: 4vw;
+}
+
+@media only screen and (max-width: 600px) {
+  main .facts div.description {
+    font-size: 18px;
+  }
+}
+
+main .facts div.description p {
+  width: calc(49% - 4rem);
+  min-width: 400px;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+  padding-right: 4rem;
+}
+
+main .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(95% + 2vw);
+  margin-top: 4vh;
+}
+
+main .gallery div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 1vw;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1000px) {
+  main .gallery div {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+}
+
+main .gallery div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 2vw;
+  width: 100%;
+}
+
+footer {
+  width: 95%;
+  margin: 4rem auto 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav ul li {
+  margin-right: 2em;
+  font-family: PxGrotesk;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+@media only screen and (max-width: 600px) {
+  footer nav ul li {
+    font-size: 18px;
+  }
+}
+
+footer nav ul li a {
+  color: #000;
+}
+
+footer div a.twitter {
+  margin-right: 1.5rem;
+}
+
+footer div a.instagram img {
+  width: 27px;
+  height: 27px;
+}
+
+footer div a.sipgate img {
+  width: 300px;
+  padding-left: 1.8rem;
+}
+/*# sourceMappingURL=style.css.map */
