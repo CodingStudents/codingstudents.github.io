@@ -287,25 +287,44 @@ main {
           border-radius: 0px;
           outline: none;
         }
-  
+
         button {
           display: inline-block;
           box-sizing: border-box;
           height: 47px;
           
           width: fit-content;
-
+  
           padding-left: 22px;
           padding-right: 22px;
-
+  
           background: #000;
           border: 1px solid transparent;
-
+  
           color: #fff;
           font-family: PxGrotesk;
           font-weight: regular;
         }
         
+        
+      }
+      a {
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: 30px;
+        text-decoration: none;
+        
+        width: fit-content;
+
+        
+        padding: 1rem 22px;
+
+        background: #000;
+        border: 1px solid transparent;
+
+        color: #fff;
+        font-family: PxGrotesk;
+        font-weight: regular;
       }
     }
 

@@ -372,6 +372,23 @@ main .facts div.meetup-info .your-email button {
   font-weight: regular;
 }
 
+main .facts div.meetup-info a {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 30px;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 22px;
+  background: #000;
+  border: 1px solid transparent;
+  color: #fff;
+  font-family: PxGrotesk;
+  font-weight: regular;
+}
+
 main .facts div.description {
   display: -webkit-box;
   display: -ms-flexbox;
